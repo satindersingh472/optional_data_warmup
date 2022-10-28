@@ -14,7 +14,7 @@ def add_for_patch(sent_data,required_args,got_data):
         if(sent_data.get(data) == None):
             object[data] = got_data[count]
         elif(sent_data.get(data) != None):
-            object[data] = sent_data.get(data)
+            object[data] = sent_data[data]
         count += 1
     return object
 
